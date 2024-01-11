@@ -8,7 +8,9 @@ const Port=3000;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
-
+app.get('/',(req,res)=>{
+res.send("hello")
+})
 app.post('/insert', (request, response) => {
     const { name } = request.body;
     const db = DbService.getDbServiceInstance();
