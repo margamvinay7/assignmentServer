@@ -3,21 +3,21 @@ import dotenv from 'dotenv'
 let instance=null;
 dotenv.config();
 
-// const connection=mysql.createConnection({
-//     host:"sql12.freesqldatabase.com",
-//     user:"sql12676079",
-//     password:"tYe4DEfXK6",
-//     database:"sql12676079",
-//     port:"3306"
-// });
 const connection=mysql.createConnection({
-
-    host:"localhost",
-    user:"root",
-    password:"0710",
-    database:"backend-assignment",
+    host:"sql12.freesqldatabase.com",
+    user:"sql12676079",
+    password:"tYe4DEfXK6",
+    database:"sql12676079",
     port:"3306"
 });
+// const connection=mysql.createConnection({
+
+//     host:"localhost",
+//     user:"root",
+//     password:"0710",
+//     database:"backend-assignment",
+//     port:"3306"
+// });
 
 
 connection.connect((err)=>{
